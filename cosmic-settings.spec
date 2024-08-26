@@ -33,6 +33,13 @@ BuildRequires:  pkgconfig(xkbcommon)
 Requires:       cosmic-randr
 Requires:       cosmic-settings-daemon
 
+Requires:       accountsservice
+Requires:       iso-codes
+Requires:       gettext
+Requires:       x11-data-xkbdata
+
+Recommends:  adw-gtk3
+
 %description
 The settings application for the COSMIC desktop environment. Developed with
 libcosmic, using the iced GUI library.
