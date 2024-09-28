@@ -45,6 +45,10 @@ replace-with = "vendored-sources"
 git = "https://github.com/pop-os/cosmic-settings-daemon"
 replace-with = "vendored-sources"
 
+[source."git+https://github.com/pop-os/cosmic-settings-subscriptions"]
+git = "https://github.com/pop-os/cosmic-settings-subscriptions"
+replace-with = "vendored-sources"
+
 [source."git+https://github.com/pop-os/cosmic-text.git"]
 git = "https://github.com/pop-os/cosmic-text.git"
 replace-with = "vendored-sources"
