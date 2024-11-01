@@ -60,7 +60,7 @@ just rootdir=%{buildroot} prefix=%{_prefix} install
 %doc README.md
 %{_bindir}/%{name}
 %{_datadir}/applications/%{appname}.desktop
-%{_datadir}/applications/%{appname}.{About,Appearance,Bluetooth,DateTime,Desktop,Displays,Dock,Firmware,Input,Keyboard,Mouse,Notifications,Panel,Power,RegionLanguage,Sound,System,Time,Touchpad,Users,Vpn,Wallpaper,WindowManagement,Wired,Wireless,Workspaces}.desktop
+%{_datadir}/applications/%{appname}.{About,Appearance,Bluetooth,DateTime,Desktop,Displays,Dock,Firmware,Input,Keyboard,Mouse,Network,Notifications,Panel,Power,RegionLanguage,Sound,System,Time,Touchpad,Users,Vpn,Wallpaper,WindowManagement,Wired,Wireless,Workspaces}.desktop
 %{_datadir}/cosmic
 %{_datadir}/icons/hicolor/??x??/apps/%{appname}.svg
 %{_datadir}/icons/hicolor/???x???/apps/%{appname}.svg
