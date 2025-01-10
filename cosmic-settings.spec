@@ -67,3 +67,4 @@ just rootdir=%{buildroot} prefix=%{_prefix} install
 %{_datadir}/icons/hicolor/scalable/status/*.svg
 %{_datadir}/metainfo/%{appname}.metainfo.xml
 %{_datadir}/polkit-1/rules.d/cosmic-settings.rules
+%{_datadir}/polkit-1/actions/com.system76.CosmicSettings.Users.policy
