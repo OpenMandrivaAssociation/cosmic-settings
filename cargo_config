@@ -59,6 +59,10 @@ replace-with = "vendored-sources"
 git = "https://github.com/pop-os/dbus-settings-bindings"
 replace-with = "vendored-sources"
 
+[source."git+https://github.com/pop-os/freedesktop-icons"]
+git = "https://github.com/pop-os/freedesktop-icons"
+replace-with = "vendored-sources"
+
 [source."git+https://github.com/pop-os/glyphon.git?tag=iced-0.14-dev"]
 git = "https://github.com/pop-os/glyphon.git"
 tag = "iced-0.14-dev"
