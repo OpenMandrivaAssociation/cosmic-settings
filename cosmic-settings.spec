@@ -3,12 +3,13 @@
 %define         appname com.system76.CosmicSettings
 Name:           cosmic-settings
 Version:        1.0.0
-Release:        0.alpha5.1
+%define beta alpha.6
+Release:        %{?beta:0.%{beta}.}1
 Summary:        COSMIC Settings
 License:        GPL-3.0-only
 Group:          Utility/COSMIC
 URL:            https://github.com/pop-os/cosmic-settings
-Source0:        https://github.com/pop-os/cosmic-settings/archive/epoch-%{version}-alpha.5.1/%{name}-epoch-%{version}-alpha.5.1.tar.gz
+Source0:        https://github.com/pop-os/cosmic-settings/archive/epoch-%{version}%{?beta:-%{beta}}/%{name}-epoch-%{version}%{?beta:-%{beta}}.tar.gz
 Source1:        vendor.tar.xz
 Source2:        cargo_config
 
@@ -45,7 +46,7 @@ The settings application for the COSMIC desktop environment. Developed with
 libcosmic, using the iced GUI library.
 
 %prep
-%autosetup -n %{name}-epoch-%{version}-alpha.5.1 -a1 -p1
+%autosetup -n %{name}-epoch-%{version}%{?beta:-%{beta}} -a1 -p1
 mkdir .cargo
 cp %{SOURCE2} .cargo/config
 
@@ -60,7 +61,7 @@ just rootdir=%{buildroot} prefix=%{_prefix} install
 %doc README.md
 %{_bindir}/%{name}
 %{_datadir}/applications/%{appname}.desktop
-%{_datadir}/applications/%{appname}.{About,Appearance,Bluetooth,DateTime,DefaultApps,Desktop,Displays,Dock,Firmware,Input,Power,Keyboard,Mouse,Network,Notifications,Panel,RegionLanguage,Sound,System,Time,Touchpad,Users,Vpn,Wallpaper,WindowManagement,Wired,Wireless,Workspaces}.desktop
+%{_datadir}/applications/%{appname}.{About,Accessibility,Appearance,Bluetooth,DateTime,DefaultApps,Desktop,Displays,Dock,Firmware,Input,Power,Keyboard,Mouse,Network,Notifications,Panel,RegionLanguage,Sound,System,Time,Touchpad,Users,Vpn,Wallpaper,WindowManagement,Wired,Wireless,Workspaces}.desktop
 %{_datadir}/cosmic
 %{_datadir}/icons/hicolor/??x??/apps/%{appname}.svg
 %{_datadir}/icons/hicolor/???x???/apps/%{appname}.svg

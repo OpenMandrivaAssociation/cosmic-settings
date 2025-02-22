@@ -34,9 +34,9 @@ replace-with = "vendored-sources"
 git = "https://github.com/pop-os/cosmic-panel"
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/pop-os/cosmic-protocols//?rev=d218c76"]
+[source."git+https://github.com/pop-os/cosmic-protocols//?rev=ed2a481"]
 git = "https://github.com/pop-os/cosmic-protocols//"
-rev = "d218c76"
+rev = "ed2a481"
 replace-with = "vendored-sources"
 
 [source."git+https://github.com/pop-os/cosmic-randr"]
