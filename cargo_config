@@ -1,6 +1,10 @@
 [source.crates-io]
 replace-with = "vendored-sources"
 
+[source."git+https://github.com/AerynOS/locales-rs"]
+git = "https://github.com/AerynOS/locales-rs"
+replace-with = "vendored-sources"
+
 [source."git+https://github.com/DioxusLabs/taffy?rev=7781c70"]
 git = "https://github.com/DioxusLabs/taffy"
 rev = "7781c70"
@@ -34,9 +38,9 @@ replace-with = "vendored-sources"
 git = "https://github.com/pop-os/cosmic-panel"
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/pop-os/cosmic-protocols//?rev=ed2a481"]
+[source."git+https://github.com/pop-os/cosmic-protocols//?rev=67df697"]
 git = "https://github.com/pop-os/cosmic-protocols//"
-rev = "ed2a481"
+rev = "67df697"
 replace-with = "vendored-sources"
 
 [source."git+https://github.com/pop-os/cosmic-randr"]
@@ -90,14 +94,6 @@ replace-with = "vendored-sources"
 [source."git+https://github.com/pop-os/winit.git?tag=iced-xdg-surface-0.13"]
 git = "https://github.com/pop-os/winit.git"
 tag = "iced-xdg-surface-0.13"
-replace-with = "vendored-sources"
-
-[source."git+https://github.com/serpent-os/blsforme.git"]
-git = "https://github.com/serpent-os/blsforme.git"
-replace-with = "vendored-sources"
-
-[source."git+https://github.com/serpent-os/lichen"]
-git = "https://github.com/serpent-os/lichen"
 replace-with = "vendored-sources"
 
 [source."git+https://github.com/wash2/accesskit?tag=iced-xdg-surface-0.13"]
