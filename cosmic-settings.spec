@@ -3,7 +3,7 @@
 %define         appname com.system76.CosmicSettings
 Name:           cosmic-settings
 Version:        1.0.0
-%define beta beta.3
+%define beta beta.4
 Release:        %{?beta:0.%{beta}.}1
 Summary:        COSMIC Settings
 License:        GPL-3.0-only
