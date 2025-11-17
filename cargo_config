@@ -5,10 +5,6 @@ replace-with = "vendored-sources"
 git = "https://github.com/AerynOS/locales-rs"
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/jackpot51/fast_image_resize.git"]
-git = "https://github.com/jackpot51/fast_image_resize.git"
-replace-with = "vendored-sources"
-
 [source."git+https://github.com/jackpot51/rust-atomicwrites"]
 git = "https://github.com/jackpot51/rust-atomicwrites"
 replace-with = "vendored-sources"
