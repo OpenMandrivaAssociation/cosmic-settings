@@ -2,8 +2,8 @@
 
 %define         appname com.system76.CosmicSettings
 Name:           cosmic-settings
-Version:        1.0.0
-%define beta beta.7
+Version:        1.0.2
+#define beta beta.7
 Release:        %{?beta:0.%{beta}.}1
 Summary:        COSMIC Settings
 License:        GPL-3.0-only
@@ -13,6 +13,7 @@ Source0:        https://github.com/pop-os/cosmic-settings/archive/epoch-%{versio
 Source1:        vendor.tar.xz
 Source2:        cargo_config
 
+BuildRequires:  make
 BuildRequires:  rust-packaging
 BuildRequires:  clang-devel
 BuildRequires:  hicolor-icon-theme
